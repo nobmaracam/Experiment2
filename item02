@@ -1,0 +1,24 @@
+//ITEM NUMBER 2
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main(){
+	
+	int prev_gallon, curr_gallon;
+	float bill;
+	float charge = 1.10;
+	float late_charge = 20;
+	
+	cout<<"Previous gallon consumption: "; cin>>prev_gallon;
+	cout<<"Current gallon consumption: "; cin>>curr_gallon;
+	
+	bill = 35;
+	bill += curr_gallon * charge;
+	if(prev_gallon > 0){
+		bill += late_charge;
+		
+	cout<<"Total water bill is: "<<bill;
+	}
+	return 0;
+	_getch();
+}
