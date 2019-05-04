@@ -1,0 +1,39 @@
+//ITEM NUMBER 1
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main(){
+	
+	char package;
+	int hours;
+	int bill;
+	
+	cout<<"Enter the package: "; cin>>package;
+	cout<<"Enter the number of hours: "; cin>>hours;
+	
+	switch(package){
+		case 'A':
+			bill = 995;
+			if(hours > 10){
+				bill += (hours - 10) * 20;
+			}
+			break;
+		case 'B':
+			bill = 1495;
+			if(hours > 20){
+				bill += (hours - 20) * 10;
+			}
+			break;
+		case 'C':
+			bill = 1995;
+			break;
+		default:
+			break;
+			cout<<"Invalid";
+	}
+	
+	cout<<"Total bill is: "<<bill;
+	
+	return 0;
+	_getch();
+}
