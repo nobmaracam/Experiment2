@@ -1,0 +1,21 @@
+//ITEM NUMBER 9	
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main(){
+	
+	int rows, columns;
+	
+	cout<<"Enter the row: "; cin>>rows;
+	cout<<"Enter the column: "; cin>>columns;
+	
+	for(int i = 1; i <= rows; i++){
+		
+		for(int j = 1; j <= columns; j++){
+			cout<<"*";
+		}
+		cout<<endl;
+	}
+	return 0;
+	_getch();
+}
